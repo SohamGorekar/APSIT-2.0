@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Sleek, auto-hiding, heading-colored scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #00bcd4 #e0f7fa;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00bcd4;
+  border-radius: 8px;
+  transition: background 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.custom-scrollbar:hover::-webkit-scrollbar-thumb,
+.custom-scrollbar:active::-webkit-scrollbar-thumb,
+.custom-scrollbar:focus::-webkit-scrollbar-thumb,
+.custom-scrollbar:target::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #e0f7fa;
+}
+
+.custom-scrollbar-right {
+  scrollbar-width: thin;
+  scrollbar-color: #26a69a #e0f7fa;
+}
+.custom-scrollbar-right::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+.custom-scrollbar-right::-webkit-scrollbar-thumb {
+  background: #26a69a;
+  border-radius: 8px;
+  transition: background 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.custom-scrollbar-right:hover::-webkit-scrollbar-thumb,
+.custom-scrollbar-right:active::-webkit-scrollbar-thumb,
+.custom-scrollbar-right:focus::-webkit-scrollbar-thumb,
+.custom-scrollbar-right:target::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+.custom-scrollbar-right::-webkit-scrollbar-track {
+  background: #e0f7fa;
+}
+
+/* Hide scrollbar by default */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Show scrollbar on hover */
+.hide-scrollbar:hover::-webkit-scrollbar {
+  width: 2px;
+  height: 8px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(33, 180, 224, 0.89);
+  border-radius: 5px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
